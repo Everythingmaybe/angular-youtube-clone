@@ -1,0 +1,6 @@
+{
+  "*.{js,ts,html}": [
+      "ng-lint-staged lint --fix --"
+  ],
+  "*.{css,scss}": "stylelint --fix"
+}

@@ -1,0 +1,81 @@
+{
+  "root": true,
+  "ignorePatterns": ["projects/**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "project": ["tsconfig.json", "e2e/tsconfig.json"],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "prettier/prettier": ["warn",  { "endOfLine": "auto" }],
+        "@angular-eslint/component-class-suffix": "error",
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "type": "element",
+            "prefix": "yt",
+            "style": "kebab-case"
+          }
+        ],
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "type": "attribute",
+            "prefix": "yt",
+            "style": "camelCase"
+          }
+        ],
+        "@angular-eslint/contextual-decorator": "error",
+        "@angular-eslint/no-pipe-impure": "error",
+        "@angular-eslint/prefer-on-push-component-change-detection": "error",
+        "@angular-eslint/relative-url-prefix": "error",
+        "@angular-eslint/sort-ngmodule-metadata-arrays": "error",
+        "@angular-eslint/use-component-view-encapsulation": "error",
+        "@angular-eslint/use-injectable-provided-in": "error",
+        "@typescript-eslint/member-ordering": [
+          "error",
+          { "default": [
+              "signature",
+              "static-initialization",
+              ["field" ,"get", "set"],
+              "constructor",
+              "method"
+            ]
+          }
+         ],
+        "@typescript-eslint/naming-convention": "error",
+        "@typescript-eslint/ban-types": "error"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "extends": ["plugin:@angular-eslint/template/recommended"],
+      "rules": {
+        "@angular-eslint/template/accessibility-alt-text": "error",
+        "@angular-eslint/template/accessibility-elements-content": "error",
+        "@angular-eslint/template/accessibility-label-has-associated-control": "error",
+        "@angular-eslint/template/accessibility-table-scope": "error",
+        "@angular-eslint/template/accessibility-valid-aria": "error",
+        "@angular-eslint/template/button-has-type": "error",
+        "@angular-eslint/template/conditional-complexity": "error",
+        "@angular-eslint/template/no-call-expression": "error",
+        "@angular-eslint/template/no-duplicate-attributes": "error"
+      }
+    },
+    {
+      "files": ["*.html"],
+      "excludedFiles": ["*inline-template-*.component.html"],
+      "extends": ["plugin:prettier/recommended"],
+      "rules": {
+        "prettier/prettier": ["error", { "parser": "angular", "endOfLine": "auto" }]
+      }
+    }
+  ]
+}
