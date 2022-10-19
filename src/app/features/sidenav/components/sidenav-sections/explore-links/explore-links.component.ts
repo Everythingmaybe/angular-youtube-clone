@@ -5,7 +5,6 @@ import { map, Observable } from 'rxjs';
 @Component({
   selector: 'yt-explore-links',
   templateUrl: './explore-links.component.html',
-  styleUrls: ['./explore-links.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ExploreLinksComponent implements OnInit {

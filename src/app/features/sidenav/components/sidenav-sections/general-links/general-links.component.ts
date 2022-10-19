@@ -3,14 +3,10 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 @Component({
   selector: 'yt-general-links',
   templateUrl: './general-links.component.html',
-  styleUrls: ['./general-links.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GeneralLinksComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
