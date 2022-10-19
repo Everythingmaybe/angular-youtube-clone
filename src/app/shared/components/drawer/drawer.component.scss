@@ -1,0 +1,16 @@
+:host {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.yt-drawer-panel-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: translateX(-100%);
+
+  &.opened {
+    transform: none;
+  }
+}

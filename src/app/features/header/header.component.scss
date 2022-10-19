@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  background-color: var(--yt-background-secondary);
+}
+
+.yt-header {
+  height: var(--yt-header-height);
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yt-header-center {
+  flex: 0 1 728px;
+}
+
+.yt-header-right {
+  & > *:not(:last-child) {
+    margin-right: 8px;
+  }
+}

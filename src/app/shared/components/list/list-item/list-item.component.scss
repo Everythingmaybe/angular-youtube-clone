@@ -1,0 +1,22 @@
+:host {
+  align-items: center;
+  display: flex;
+  min-height: 40px;
+  padding: 0 24px;
+  color: var(--yt-text-primary);
+  text-decoration: none;
+
+  &:hover {
+    background-color: rgb(255 255 255 / 10%);
+  }
+}
+
+.yt-list-item-icon {
+  display: flex;
+  margin-right: 24px;
+}
+
+.yt-list-item-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

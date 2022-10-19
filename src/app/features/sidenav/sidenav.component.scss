@@ -1,0 +1,25 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: var(--yt-header-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.yt-drawer {
+  height: 100%;
+}
+
+.yt-sidenav-panel {
+  background-color: var(--yt-background-secondary);
+  height: 100%;
+  width: var(--yt-sidenav-width);
+  overflow: auto;
+
+  > *:not(:last-child) {
+    display: block;
+    border-bottom: 1px solid var(--yt-border);
+  }
+}

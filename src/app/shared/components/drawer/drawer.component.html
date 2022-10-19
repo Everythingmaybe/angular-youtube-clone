@@ -1,0 +1,10 @@
+<div [class.opened]="opened" class="yt-drawer-panel-container">
+  <ng-content select="[ytDrawerPanel]"></ng-content>
+</div>
+
+<div
+  [style.margin-left.px]="
+    opened ? drawerPanelElement?.nativeElement?.offsetWidth : null
+  ">
+  <ng-content></ng-content>
+</div>

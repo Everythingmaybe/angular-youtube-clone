@@ -1,0 +1,23 @@
+<header class="yt-header">
+  <div class="yt-header-left">
+    <button (click)="sidenavService.toggle()" yt-icon-button type="button">
+      <yt-icon>menu</yt-icon>
+    </button>
+    <a routerLink="/">Logo</a>
+  </div>
+
+  <div class="yt-header-center">
+    <yt-searchbox></yt-searchbox>
+  </div>
+
+  <div class="yt-header-right">
+    <button yt-icon-button type="button">
+      <yt-icon>more_vert</yt-icon>
+    </button>
+
+    <a yt-button="secondary" routerLink="">
+      <yt-icon>account_circle</yt-icon>
+      Sign in
+    </a>
+  </div>
+</header>

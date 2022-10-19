@@ -1,0 +1,14 @@
+<!--<yt-mini-sidenav></yt-mini-sidenav>-->
+
+<yt-drawer
+  [opened]="(sidenavService.opened$ | async) ?? true"
+  class="yt-drawer">
+  <div ytDrawerPanel class="yt-sidenav-panel">
+    <yt-general-links></yt-general-links>
+    <yt-explore-links></yt-explore-links>
+    <yt-more-links></yt-more-links>
+    <yt-other-links></yt-other-links>
+    <yt-sidenav-footer></yt-sidenav-footer>
+  </div>
+  <ng-content></ng-content>
+</yt-drawer>

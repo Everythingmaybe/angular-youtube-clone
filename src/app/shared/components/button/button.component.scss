@@ -1,0 +1,33 @@
+:host {
+  background-color: transparent;
+  padding: 5px 11px;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid transparent;
+  color: inherit;
+
+  &.yt-button-primary {
+    background-color: var(--yt-button-primary);
+    border-color: var(--yt-button-primary);
+  }
+
+  &.yt-button-secondary {
+    border-color: var(--yt-button-secondary);
+    color: var(--yt-button-secondary);
+  }
+}
+
+.yt-button-content {
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

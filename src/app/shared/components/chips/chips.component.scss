@@ -1,0 +1,53 @@
+:host {
+  position: relative;
+  display: flex;
+  background-color: var(--yt-background-secondary);
+  border-top: 1px solid var(--yt-border);
+  border-bottom: 1px solid var(--yt-border);
+}
+
+.yt-chips-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.yt-chips-scroll-container {
+  display: flex;
+}
+
+.yt-chips-arrow {
+  position: absolute;
+  display: flex;
+  height: 100%;
+
+  &-button {
+    background-color: var(--yt-background-secondary);
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &-right {
+    right: 0;
+
+    &:before {
+      background: linear-gradient(to left,var(--yt-background-secondary) 20%,rgba(33,33,33,0) 80%);
+    }
+  }
+
+  &-left {
+    left: 0;
+
+    &:after {
+      background: linear-gradient(to right,var(--yt-background-secondary) 20%,rgba(33,33,33,0) 80%);
+    }
+  }
+
+  &-left:after,
+  &-right:before {
+    height: 100%;
+    width: 50px;
+    content: "";
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,33 @@
+:host {
+  font-family: inherit;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 12px;
+  margin-left: 0;
+  padding: 0 12px;
+  height: 32px;
+  min-width: 12px;
+  border-radius: 16px;
+  white-space: nowrap;
+  background-color: var(--yt-chip);
+  border: 1px solid var(--yt-border);
+  color: var(--yt-text-primary);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--yt-chip-hover);
+  }
+
+  &:first-child {
+    margin-left: 24px;
+  }
+
+  &:last-child {
+    margin-right: 24px;
+  }
+
+  &.active {
+    background-color: var(--yt-text-primary);
+    color: var(--yt-text-primary-inverse);
+  }
+}
