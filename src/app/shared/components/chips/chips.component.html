@@ -1,4 +1,4 @@
-<div *ngIf="showPrev" class="yt-chips-arrow yt-chips-arrow-left">
+<div *ngIf="showPrev" #prevArrow class="yt-chips-arrow yt-chips-arrow-prev">
   <div class="yt-chips-arrow-button">
     <button (click)="prev()" yt-icon-button type="button">
       <yt-icon>chevron_left</yt-icon>
@@ -9,13 +9,15 @@
 <div class="yt-chips-container">
   <div
     #scrollContainer
-    class="yt-chips-scroll-container"
-    style="transform: translateX({{ -1 * offset }}px)">
+    [style.transform]="'translateX(' + -1 * offset + 'px)'"
+    (focusin)="focus($event)"
+    (wheel)="wheel($event)"
+    class="yt-chips-scroll-container">
     <ng-content select="[yt-chip]"></ng-content>
   </div>
 </div>
 
-<div *ngIf="showNext" class="yt-chips-arrow yt-chips-arrow-right">
+<div *ngIf="showNext" #nextArrow class="yt-chips-arrow yt-chips-arrow-next">
   <div class="yt-chips-arrow-button">
     <button (click)="next()" yt-icon-button type="button">
       <yt-icon>navigate_next</yt-icon>

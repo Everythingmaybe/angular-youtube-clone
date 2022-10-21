@@ -3,16 +3,18 @@
   font-size: 14px;
   text-decoration: none;
   margin: 12px;
+  letter-spacing: 0.2px;
   margin-left: 0;
   padding: 0 12px;
   height: 32px;
   min-width: 12px;
-  border-radius: 16px;
+  border-radius: 8px;
   white-space: nowrap;
   background-color: var(--yt-chip);
-  border: 1px solid var(--yt-border);
+  border: none;
   color: var(--yt-text-primary);
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background-color: var(--yt-chip-hover);

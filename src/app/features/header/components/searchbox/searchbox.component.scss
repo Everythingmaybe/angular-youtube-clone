@@ -6,13 +6,13 @@
   align-items: center;
   background-color: var(--yt-background-primary);
   border: 1px solid var(--yt-border);
-  border-radius: 2px 0 0 2px;
+  border-radius: 40px 0 0 40px;
   border-right-color: transparent;
   box-shadow: inset 0 1px 2px var(--ytd-searchbox-legacy-border-shadow-color);
   display: flex;
   height: 40px;
-  margin-left: 34px;
-  padding: 2px 6px;
+  margin-left: 32px;
+  padding: 0 4px 0 16px;
   position: relative;
   width: 100%;
 
@@ -20,7 +20,7 @@
     border: 1px solid #1c62b9;
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 30%);
     margin-left: 0;
-    padding-left: 40px;
+    padding-left: 48px;
 
     .yt-searchbox-icon {
       display: inline-block;
@@ -43,17 +43,21 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-left: 4px;
   max-width: 100%;
   outline: none;
   text-align: inherit;
   width: 100%;
+  padding: 1px 0;
+
+  &::placeholder {
+    font-weight: 500;
+  }
 }
 
 .yt-searchbox-button {
   background-color: var(--yt-searchbox-button-background);
-  border: 1px solid var(--yt-searchbox-border);
-  border-radius: 0 2px 2px 0;
+  border: 1px solid var(--yt-searchbox-button-border);
+  border-radius: 0 40px 40px 0;
   color: inherit;
   cursor: pointer;
   flex-shrink: 0;

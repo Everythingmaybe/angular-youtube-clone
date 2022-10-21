@@ -1,22 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --yt-background-primary: #181818;
-  --yt-background-secondary: #212121;
+  --yt-background-primary: #0f0f0f;
+  --yt-background-secondary: #0f0f0f;
 
   --yt-text-primary: #fff;
   --yt-text-primary-inverse: #030303;
   --yt-text-secondary: #aaa;
+  --yt-text-disabled: #717171;
 
   --yt-border: rgba(255, 255, 255, 0.1);
   --yt-sidenav-width: 240px;
   --yt-header-height: 56px;
   --yt-button-primary: #3ea6ff;
   --yt-button-secondary: #3ea6ff;
+  --yt-button-secondary-hover: #263850;
 
   --yt-chip: rgba(255, 255, 255, 0.1);
   --yt-chip-hover: rgba(255, 255, 255, 0.2);
 
   --yt-searchbox-button-background: hsla(0, 0%, 100%, 0.08);
+  --yt-searchbox-button-border: hsl(0, 0%, 18.82%);
   --yt-searchbox-button: hsla(0, 0%, 100%, 0.08);
   --yt-searchbox-text-color: hsla(0, 100%, 100%, 0.88);
 }

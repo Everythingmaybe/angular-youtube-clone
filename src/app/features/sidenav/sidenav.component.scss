@@ -16,7 +16,11 @@
   background-color: var(--yt-background-secondary);
   height: 100%;
   width: var(--yt-sidenav-width);
-  overflow: auto;
+  overflow: hidden;
+
+  &:hover {
+    overflow: auto;
+  }
 
   > *:not(:last-child) {
     display: block;

@@ -13,6 +13,12 @@
 
 .yt-header-center {
   flex: 0 1 728px;
+  display: flex;
+}
+
+.yt-searchbox {
+  margin-left: 40px;
+  width: 100%;
 }
 
 .yt-header-right {
