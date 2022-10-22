@@ -1,0 +1,10 @@
+:host {
+  display: block;
+  margin: 8px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  background-color: var(--yt-tooltip-background, #616161);
+  color: var(--yt-tooltip-text-color, white);
+  padding: 8px;
+  border-radius: 8px;
+}

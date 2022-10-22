@@ -7,8 +7,13 @@
   text-decoration: none;
   border-radius: 10px;
 
-  &:hover {
-    background-color: rgb(255 255 255 / 10%);
+  &:hover,
+  &.active {
+    background-color: var(--yt-chip);
+  }
+
+  &.active:hover {
+    background-color: var(--yt-chip-hover);
   }
 }
 

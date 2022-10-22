@@ -21,6 +21,16 @@
   width: 100%;
 }
 
+.yt-voice-search {
+  margin-left: 8px;
+  background-color: var(--yt-voice-search-button);
+
+  &:hover,
+  &:focus {
+    background-color: var(--yt-voice-search-button-hover);
+  }
+}
+
 .yt-header-right {
   & > *:not(:last-child) {
     margin-right: 8px;

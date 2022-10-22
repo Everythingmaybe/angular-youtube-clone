@@ -9,6 +9,7 @@ import { HeaderComponent } from './header.component';
 import { SearchboxComponent } from './components/searchbox/searchbox.component';
 import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from '@shared/components/button/button.component';
+import { TooltipModule } from '@shared/components/tooltip/tooltip.module';
 
 @NgModule({
   declarations: [HeaderComponent, SearchboxComponent],
@@ -19,6 +20,7 @@ import { ButtonComponent } from '@shared/components/button/button.component';
     IconButtonComponent,
     IconComponent,
     RouterLinkWithHref,
+    TooltipModule,
   ],
   exports: [HeaderComponent],
 })

@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '@angular/cdk/overlay-prebuilt.css';
+
 :root {
   --yt-background-primary: #0f0f0f;
   --yt-background-secondary: #0f0f0f;
@@ -22,6 +25,12 @@
   --yt-searchbox-button-border: hsl(0, 0%, 18.82%);
   --yt-searchbox-button: hsla(0, 0%, 100%, 0.08);
   --yt-searchbox-text-color: hsla(0, 100%, 100%, 0.88);
+
+  --yt-voice-search-button: #181818;
+  --yt-voice-search-button-hover: rgba(255, 255, 255, 0.1);
+
+  --yt-tooltip-text-color: #fff;
+  --yt-tooltip-background: #616161;
 }
 
 * {

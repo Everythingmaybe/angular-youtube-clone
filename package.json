@@ -16,6 +16,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
+    "@angular/cdk": "^14.2.5",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
@@ -60,6 +61,6 @@
     "stylelint-config-sass-guidelines": "^9.0.1",
     "stylelint-config-standard": "^28.0.0",
     "stylelint-prettier": "^2.0.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.8.4"
   }
 }
