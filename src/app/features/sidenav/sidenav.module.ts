@@ -10,6 +10,8 @@ import { MoreLinksComponent } from './components/more-links/more-links.component
 import { OtherLinksComponent } from './components/other-links/other-links.component';
 import { SidenavFooterComponent } from './components/sidenav-footer/sidenav-footer.component';
 import { RouterLinkWithHref } from '@angular/router';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { ButtonComponent } from '@shared/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,11 @@ import { RouterLinkWithHref } from '@angular/router';
     OtherLinksComponent,
     SidenavComponent,
     SidenavFooterComponent,
+    SignInComponent,
   ],
   exports: [SidenavComponent],
   imports: [
+    ButtonComponent,
     CommonModule,
     DrawerModule,
     IconComponent,

@@ -1,3 +1,14 @@
 <footer>
+  <div
+    *ngFor="let section of sidenavSections"
+    class="yt-sidenav-footer-section">
+    <a
+      *ngFor="let link of section"
+      [href]="link.href"
+      class="yt-sidenav-footer-link"
+      >{{ link.name }}</a
+    >
+  </div>
+
   <div class="yt-copyright">© 2022 Google LLC</div>
 </footer>

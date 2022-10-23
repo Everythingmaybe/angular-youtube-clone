@@ -1,7 +1,6 @@
 <yt-list>
-  <yt-list-title>Explore</yt-list-title>
-  <yt-list-item *ngFor="let category of categories$ | async">
-    <yt-icon>circle</yt-icon>
-    {{ category.snippet.title }}
-  </yt-list-item>
+  <a *ngFor="let link of exploreLinks" [routerLink]="link.href" yt-list-item>
+    <yt-icon>{{ link.icon }}</yt-icon>
+    {{ link.name }}
+  </a>
 </yt-list>

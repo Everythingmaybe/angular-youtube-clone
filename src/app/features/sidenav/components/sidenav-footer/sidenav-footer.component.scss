@@ -3,6 +3,23 @@
   padding: 16px 24px;
 }
 
+.yt-sidenav-footer-section {
+  margin-bottom: 12px;
+}
+
+.yt-sidenav-footer-link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--yt-text-secondary);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
 .yt-copyright {
   color: var(--yt-text-secondary);
   font-size: 1.2rem;

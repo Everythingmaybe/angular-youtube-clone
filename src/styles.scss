@@ -21,6 +21,8 @@
   --yt-chip: rgba(255, 255, 255, 0.1);
   --yt-chip-hover: rgba(255, 255, 255, 0.2);
 
+  --yt-scrollbar-width: 16px;
+
   --yt-searchbox-button-background: hsla(0, 0%, 100%, 0.08);
   --yt-searchbox-button-border: hsl(0, 0%, 18.82%);
   --yt-searchbox-button: hsla(0, 0%, 100%, 0.08);
@@ -49,7 +51,7 @@ body {
 }
 
 *::-webkit-scrollbar {
-  width: 16px;
+  width: var(--yt-scrollbar-width);
 }
 
 *::-webkit-scrollbar-thumb {

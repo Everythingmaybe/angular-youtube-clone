@@ -1,18 +1,13 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { map, Observable } from 'rxjs';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+
+import { SidenavLink } from '@features/sidenav/models/sidenav-link.model';
+import { SIDENAV_EXPLORE_LINKS } from '@features/sidenav/constants/sidenav-links';
 
 @Component({
   selector: 'yt-explore-links',
   templateUrl: './explore-links.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ExploreLinksComponent implements OnInit {
-  public readonly categories$: Observable<any[]> = this.http
-    .get<any>('/videoCategories?part=snippet&hl=ru')
-    .pipe(map(({ items }) => items));
-
-  constructor(private http: HttpClient) {}
-
-  ngOnInit(): void {}
+export class ExploreLinksComponent {
+  public readonly exploreLinks: SidenavLink[] = SIDENAV_EXPLORE_LINKS;
 }
