@@ -1,18 +1,12 @@
 <yt-list>
   <yt-list-title>More from YouTube</yt-list-title>
 
-  <yt-list-item>
-    <yt-icon>circle</yt-icon>
-    YouTube Music
-  </yt-list-item>
-
-  <yt-list-item>
-    <yt-icon>circle</yt-icon>
-    YouTube Kids
-  </yt-list-item>
-
-  <yt-list-item>
-    <yt-icon>circle</yt-icon>
-    YouTube TV
-  </yt-list-item>
+  <a
+    *ngFor="let link of moreLinks"
+    yt-list-item
+    [href]="link.href"
+    target="_blank">
+    <yt-icon [name]="link.icon"></yt-icon>
+    {{ link.name }}
+  </a>
 </yt-list>

@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.yt-header-left {
+  display: flex;
+  align-items: center;
+}
+
 .yt-header-center {
   flex: 0 1 728px;
   display: flex;
@@ -35,4 +40,11 @@
   & > *:not(:last-child) {
     margin-right: 8px;
   }
+}
+
+.yt-logo {
+  width: 120px;
+  height: 56px;
+  padding: 18px 14px 18px 16px;
+  color: var(--yt-text-primary);
 }

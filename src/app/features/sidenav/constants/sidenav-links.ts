@@ -2,22 +2,36 @@ import { SidenavLink } from '@features/sidenav/models/sidenav-link.model';
 
 export const SIDENAV_GENERAL_LINKS: SidenavLink[] = [
   { name: 'Home', icon: 'home', href: '/' },
-  { name: 'Shorts', icon: 'explore', href: '/' },
+  { name: 'Shorts', icon: 'shorts', href: '/' },
   { name: 'Subscriptions', icon: 'subscriptions', href: '/' },
 ];
 
 export const SIDENAV_GENERAL_LINKS_SECOND: SidenavLink[] = [
-  { name: 'Library', icon: 'video_library', href: '/' },
+  { name: 'Library', icon: 'library', href: '/' },
   { name: 'History', icon: 'history', href: '/' },
 ];
 
 export const SIDENAV_EXPLORE_LINKS: SidenavLink[] = [
-  { name: 'Trending', icon: 'local_fire_department', href: '/' },
+  { name: 'Trending', icon: 'fire', href: '/' },
   { name: 'Music', icon: 'music_note', href: '/' },
-  { name: 'Movies', icon: 'theaters', href: '/' },
-  { name: 'Gaming', icon: 'stadia_controller', href: '/' },
-  { name: 'Sports', icon: 'sports', href: '/' },
-  { name: 'Learning', icon: 'school', href: '/' },
+  { name: 'Movies', icon: 'movies', href: '/' },
+  { name: 'Live', icon: 'wireless', href: '/' },
+  { name: 'Gaming', icon: 'game', href: '/' },
+  { name: 'Sports', icon: 'champ_cup', href: '/' },
+];
+
+export const SIDENAV_MORE_LINKS: SidenavLink[] = [
+  {
+    name: 'YouTube Music',
+    icon: 'yt_music',
+    href: 'https://music.youtube.com',
+  },
+  {
+    name: 'YouTube Kids',
+    icon: 'yt_kids',
+    href: 'https://www.youtubekids.com',
+  },
+  { name: 'YouTube TV', icon: 'yt_tv', href: 'https://tv.youtube.com' },
 ];
 
 export const SIDENAV_FOOTER_LINKS: SidenavLink[] = [

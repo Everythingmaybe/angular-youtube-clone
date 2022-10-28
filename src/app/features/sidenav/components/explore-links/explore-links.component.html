@@ -1,6 +1,7 @@
 <yt-list>
+  <yt-list-title>Explore</yt-list-title>
   <a *ngFor="let link of exploreLinks" [routerLink]="link.href" yt-list-item>
-    <yt-icon>{{ link.icon }}</yt-icon>
+    <yt-icon name="{{ link.icon }}"></yt-icon>
     {{ link.name }}
   </a>
 </yt-list>

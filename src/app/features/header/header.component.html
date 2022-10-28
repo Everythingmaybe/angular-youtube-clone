@@ -1,9 +1,11 @@
 <header class="yt-header">
   <div class="yt-header-left">
     <button (click)="sidenavService.toggle()" yt-icon-button type="button">
-      <yt-icon>menu</yt-icon>
+      <yt-icon name="menu"></yt-icon>
     </button>
-    <a routerLink="/">Logo</a>
+    <a routerLink="/">
+      <yt-icon class="yt-logo" name="logo"></yt-icon>
+    </a>
   </div>
 
   <div class="yt-header-center">
@@ -13,17 +15,17 @@
       ytTooltip="1234567890"
       class="yt-voice-search"
       type="button">
-      <yt-icon fill>mic</yt-icon>
+      <yt-icon name="mic-fill"></yt-icon>
     </button>
   </div>
 
   <div class="yt-header-right">
     <button yt-icon-button type="button">
-      <yt-icon>more_vert</yt-icon>
+      <yt-icon name="more_vert"></yt-icon>
     </button>
 
     <a yt-button="secondary" routerLink="">
-      <yt-icon>account_circle</yt-icon>
+      <yt-icon name="account"></yt-icon>
       Sign in
     </a>
   </div>

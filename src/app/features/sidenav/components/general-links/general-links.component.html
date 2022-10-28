@@ -1,6 +1,6 @@
 <yt-list *ngFor="let section of generalLinksSections">
   <a *ngFor="let link of section" [routerLink]="link.href" yt-list-item>
-    <yt-icon>{{ link.icon }}</yt-icon>
+    <yt-icon [name]="link.icon"></yt-icon>
     {{ link.name }}
   </a>
 </yt-list>
