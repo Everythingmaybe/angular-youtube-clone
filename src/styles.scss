@@ -11,6 +11,8 @@
   --yt-text-secondary: #aaa;
   --yt-text-disabled: #717171;
 
+  --yt-simple-link: #aaa;
+
   --yt-border: rgba(255, 255, 255, 0.1);
   --yt-sidenav-width: 240px;
   --yt-header-height: 56px;
@@ -60,4 +62,11 @@ body {
   border: 4px solid transparent;
   background-clip: content-box;
   background-color: hsl(0,0%,67%);
+}
+
+.yt-simple-link {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--yt-simple-link);
 }

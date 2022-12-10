@@ -1,0 +1,19 @@
+<img
+  class="yt-img"
+  [ngSrc]="video.snippet.thumbnails.medium.url"
+  [width]="video.snippet.thumbnails.medium.width"
+  [height]="video.snippet.thumbnails.medium.height"
+  [alt]="video.snippet.title" />
+
+<h3 class="yt-video-card-title">
+  <a class="yt-simple-link" routerLink="">{{ video.snippet.title }}</a>
+</h3>
+
+<div class="yt-video-card-channel">
+  <a class="yt-simple-link" routerLink="">{{ video.snippet.channelTitle }}</a>
+</div>
+
+<div class="yt-video-card-meta">
+  <div class="yt-video-card-meta-item">{{ video.statistics.viewCount }}</div>
+  <div class="yt-video-card-meta-item">{{ video.statistics.viewCount }}</div>
+</div>

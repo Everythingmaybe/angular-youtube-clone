@@ -1,10 +1,7 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  SecurityContext,
-} from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { map } from 'rxjs';
+
+import { HomeApiService } from '@pages/home/services/home-api.service';
 
 @Component({
   selector: 'yt-home',
@@ -13,12 +10,9 @@ import { map } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
-  context = SecurityContext;
-  public videos$ = this.http
-    .get(
-      '/videos?chart=mostPopular&regionCode=JP&part=snippet,player&maxResults=50'
-    )
+  public videos$ = this.homeApisService
+    .list()
     .pipe(map((response: any) => response.items));
 
-  constructor(private http: HttpClient) {}
+  constructor(private readonly homeApisService: HomeApiService) {}
 }

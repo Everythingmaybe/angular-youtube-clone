@@ -1,0 +1,39 @@
+.yt-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.yt-video-card-title {
+  --yt-simple-link: var(--yt-text-primary);
+
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  max-height: 4.4rem;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.yt-video-card-channel,
+.yt-video-card-meta {
+  color: var(--yt-text-secondary);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+.yt-video-card-meta-item {
+  display: inline-block;
+
+  &:not(:first-child)::before {
+    content: '•';
+    margin: 0 4px;
+  }
+}
