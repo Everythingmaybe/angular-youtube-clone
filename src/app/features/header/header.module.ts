@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLinkWithHref } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 import { IconButtonComponent } from '@shared/components/icon-button/icon-button.component';
 import { IconComponent } from '@shared/components/icon/icon.component';
@@ -19,7 +19,7 @@ import { TooltipModule } from '@shared/components/tooltip/tooltip.module';
     FormsModule,
     IconButtonComponent,
     IconComponent,
-    RouterLinkWithHref,
+    RouterLink,
     TooltipModule,
   ],
   exports: [HeaderComponent],

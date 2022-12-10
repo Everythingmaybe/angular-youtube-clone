@@ -9,7 +9,7 @@ import { ExploreLinksComponent } from './components/explore-links/explore-links.
 import { MoreLinksComponent } from './components/more-links/more-links.component';
 import { OtherLinksComponent } from './components/other-links/other-links.component';
 import { SidenavFooterComponent } from './components/sidenav-footer/sidenav-footer.component';
-import { RouterLinkWithHref } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { ButtonComponent } from '@shared/components/button/button.component';
 
@@ -30,7 +30,7 @@ import { ButtonComponent } from '@shared/components/button/button.component';
     DrawerModule,
     IconComponent,
     ListModule,
-    RouterLinkWithHref,
+    RouterLink,
   ],
 })
 export class SidenavModule {}
