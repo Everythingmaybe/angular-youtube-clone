@@ -12,11 +12,15 @@
     <yt-searchbox class="yt-searchbox"></yt-searchbox>
     <button
       yt-icon-button
-      ytTooltip="1234567890"
+      [ytTooltip]="but"
       class="yt-voice-search"
       type="button">
       <yt-icon name="mic-fill"></yt-icon>
     </button>
+
+    <ng-template #but>
+      <button>123445</button>
+    </ng-template>
   </div>
 
   <div class="yt-header-right">

@@ -1,3 +1,7 @@
 :host {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: var(--yt-grid-col-gap, 16px);
+  grid-row-gap: var(--yt-grid-row-gap, 40px);
+  max-width: 1328px;
 }

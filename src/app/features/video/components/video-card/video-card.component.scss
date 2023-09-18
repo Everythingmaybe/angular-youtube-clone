@@ -1,13 +1,16 @@
-.yt-img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+.yt-video-card-description {
+  display: flex;
+  margin-top: 12px;
+}
+
+.yt-video-card-channel-link {
+  margin-right: 12px;
 }
 
 .yt-video-card-title {
   --yt-simple-link: var(--yt-text-primary);
 
-  margin-top: 12px;
+  margin-top: 0;
   margin-bottom: 4px;
   font-size: 1.6rem;
   line-height: 2.2rem;
@@ -36,4 +39,9 @@
     content: '•';
     margin: 0 4px;
   }
+}
+
+.yt-video-card-channel-image {
+  width: 36px;
+  height: 36px;
 }

@@ -4,8 +4,8 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('@pages/home/home.module').then(m => m.HomeModule),
+    pathMatch: 'full',
+    loadChildren: () => import('@pages/home/home.module'),
   },
 ];
 

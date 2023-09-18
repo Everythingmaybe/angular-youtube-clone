@@ -10,6 +10,7 @@ import { SearchboxComponent } from './components/searchbox/searchbox.component';
 import { FormsModule } from '@angular/forms';
 import { ButtonComponent } from '@shared/components/button/button.component';
 import { TooltipModule } from '@shared/components/tooltip/tooltip.module';
+import { LottieComponent } from 'ngx-lottie';
 
 @NgModule({
   declarations: [HeaderComponent, SearchboxComponent],
@@ -19,6 +20,7 @@ import { TooltipModule } from '@shared/components/tooltip/tooltip.module';
     FormsModule,
     IconButtonComponent,
     IconComponent,
+    LottieComponent,
     RouterLink,
     TooltipModule,
   ],

@@ -6,6 +6,7 @@ import {
 } from '@angular/core';
 
 @Component({
+  // eslint-disable-next-line @angular-eslint/component-selector
   selector: 'a[yt-button], button[yt-button]',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.scss'],

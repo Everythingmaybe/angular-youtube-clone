@@ -27,8 +27,9 @@
   <button yt-chip type="button">1234</button>
 </yt-chips>
 
-<div class="yt-grid">
-  <yt-video-card
-    *ngFor="let video of videos$ | async"
-    [video]="video"></yt-video-card>
-</div>
+<div *ngIf="loading$ | async">Loading...</div>
+
+<yt-grid class="yt-grid">
+  <yt-video-card *ngFor="let video of videos$ | async" [video]="video">
+  </yt-video-card>
+</yt-grid>
